@@ -68,7 +68,7 @@ def plot_all_epochs(gen_data, I_XT_array, I_TY_array, axes, epochsInds, f, index
     #Save the figure and add color bar
     if index_i ==axes.shape[0]-1 and index_j ==axes.shape[1]-1:
         plt_ut.create_color_bar(f, cmap, colorbar_axis, bar_font, epochsInds,title='Epochs')
-        f.savefig(save_name+'.jpg', dpi=500, format='jpg')
+        f.savefig(save_name+'.png', dpi=500, format='png')
 
 
 def plot_by_training_samples(I_XT_array, I_TY_array, axes, epochsInds, f, index_i, index_j, size_ind, font_size, y_ticks, x_ticks, colorbar_axis, title_str, axis_font, bar_font, save_name, samples_labels):
@@ -92,7 +92,7 @@ def plot_by_training_samples(I_XT_array, I_TY_array, axes, epochsInds, f, index_
     #Create color bar and save it
     if index_i == axes.shape[0] - 1 and index_j == axes.shape[1] - 1:
         plt_ut.create_color_bar(f, cmap, colorbar_axis, bar_font, epochsInds,title='Training Data')
-        f.savefig(save_name + '.jpg', dpi=150, format='jpg')
+        f.savefig(save_name + '.png', dpi=150, format='png')
 
 def calc_velocity(data, epochs):
     """Calculate the velocity (both in X and Y) for each layer"""
@@ -304,7 +304,7 @@ def plot_snapshots(name_s, save_name, i, time_stemps=[13, 180, 963],font_size = 
     data_array = get_data(name_s)
     data = np.squeeze(data_array['information'])
     update_line_specipic_points(time_stemps, data, axes, to_do, font_size, axis_font)
-    f.savefig(save_name + '.jpg', dpi=200, format='jpg')
+    f.savefig(save_name + '.png', dpi=200, format='png')
 
 
 def load_figures(mode, str_names=None):
@@ -779,7 +779,9 @@ if __name__ == '__main__':
     action = COMPRAED_PERCENT
     prex = 'jobsFiles/'
     sofix = '.pickle'
-    prex2 = '/Users/ravidziv/PycharmProjects/IDNNs/jobs/'
+    # prex2 = '/Users/ravidziv/PycharmProjects/IDNNs/jobs/'
+    # Todo benjamin: do not hardcode this
+    prex2 = '/Users/pinouchon/code/IDNNs/jobs'
     #plot above action, the norms, the gradients and the pearson coeffs
     do_plot_action, do_plot_norms, do_plot_gradients, do_plot_pearson,  = False, False, True, False
     do_plot_eig = False

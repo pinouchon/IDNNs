@@ -132,6 +132,9 @@ def calc_information_for_epoch(iter_index, interval_information_display, ws_iter
                                calc_vartional_information=False, calc_information_by_sampling=False,calc_combined = False,calc_regular_information = True):
     """Calculate the information for all the layers for specific epoch"""
     np.random.seed(None)
+    calc_combined = True
+    params = []
+    print(calc_combined)
     if calc_combined:
         ss = [0.12, 0.12, 0.12, 0.12, 0.12, 0.12]
         ks = [4, 15, 50, 50, 50, 100]
