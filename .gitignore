@@ -1,0 +1,14 @@
+
+.idea/*
+idnns/include/*
+idnns/bin/*
+idnns/lib/*
+.DS_STORE
+venv
+*.pyc
+
+# misc files
+figure.png
+idnns/.Python
+idnns/pip-selfcheck.json
+resultsdata.pickle
