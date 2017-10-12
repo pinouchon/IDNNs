@@ -781,7 +781,7 @@ if __name__ == '__main__':
     sofix = '.pickle'
     # prex2 = '/Users/ravidziv/PycharmProjects/IDNNs/jobs/'
     # Todo benjamin: do not hardcode this
-    prex2 = '/Users/pinouchon/code/IDNNs/jobs'
+    prex2 = './jobs'
     #plot above action, the norms, the gradients and the pearson coeffs
     do_plot_action, do_plot_norms, do_plot_gradients, do_plot_pearson,  = False, False, True, False
     do_plot_eig = False

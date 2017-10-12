@@ -179,7 +179,7 @@ class informationNetwork():
         """Save the data to the file """
         #directory =  '{0}/{1}{2}/'.format(os.path.dirname(sys.argv[0]), parent_dir, self.params['directory'])
         # TODO benjamin: do not hardcode this
-        directory = '/Users/pinouchon/code/IDNNs/results'
+        directory = './results'
 
         data = {'information': self.information,
                      'test_error': self.test_error, 'train_error': self.train_error, 'var_grad_val': self.grads,
